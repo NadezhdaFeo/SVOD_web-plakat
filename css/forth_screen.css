@@ -1,0 +1,233 @@
+.forth_screen {
+    width: 100vw;
+    display: flex;
+}
+
+.scr4_block_1 {
+    width: 38vw;
+    height: 48vw;
+    background: url(../img/scr4_block_1_background.svg);
+    background-size: contain;
+    transition: none !important;
+    background-color: black;
+    overflow: hidden;
+    animation: scr4_block_1 2.5s linear infinite;
+}
+
+@keyframes scr4_block_1 {
+
+    0%,
+    9.9% {
+        background: url(../img/scr4_block_1_background.svg);
+        background-size: contain;
+    }
+
+    10%,
+    19.9% {
+        background: url(../img/scr4_block_1_background_2.svg);
+        background-size: contain;
+    }
+
+    20%,
+    29.9% {
+        background: url(../img/scr4_block_1_background_3.svg);
+        background-size: contain;
+    }
+
+    30%,
+    39.9% {
+        background: url(../img/scr4_block_1_background_4.svg);
+        background-size: contain;
+    }
+
+    40%,
+    49.9% {
+        background: url(../img/scr4_block_1_background_5.svg);
+        background-size: contain;
+    }
+
+    50%,
+    59.9% {
+        background: url(../img/scr4_block_1_background_6.svg);
+        background-size: contain;
+    }
+
+    60%,
+    69.9% {
+        background: url(../img/scr4_block_1_background_7.svg);
+        background-size: contain;
+    }
+
+    70%,
+    79.9% {
+        background: url(../img/scr4_block_1_background_8.svg);
+        background-size: contain;
+    }
+
+    80%,
+    89.9% {
+        background: url(../img/scr4_block_1_background_6.svg);
+        background-size: contain;
+    }
+
+    90%,
+    99.9% {
+        background: url(../img/scr4_block_1_background.svg);
+        background-size: contain;
+    }
+}
+
+.scr4_blocks_2-5 {
+    width: 62vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.scr4_blocks_2-3,
+.scr4_blocks_4-5 {
+    display: flex;
+}
+
+.block4_2 {
+    width: 24vw;
+    height: 24vw;
+    background: url(../img/C.svg) 0.2vw 0.2vw / 5.5vw no-repeat,
+        url(../img/V.svg) 6.6vw 0.2vw / 4.25vw no-repeat,
+        url(../img/O.svg) 11.8vw 0.2vw / 5.95vw no-repeat,
+        url(../img/D.svg) 17.8vw 0.2vw / 5.95vw no-repeat;
+
+}
+
+.block4_3 {
+    width: 38vw;
+    height: 24vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    background: black;
+}
+
+.text_block4_3 {
+    width: 100%;
+    font-family: "EucidCircularB-Regular";
+    text-transform: uppercase;
+    font-size: 2.8vw;
+    line-height: 2.8vw;
+    text-align: center;
+    color: white;
+    word-wrap: break-word;
+    animation: text_block4_3 4s infinite;
+}
+
+@keyframes text_block4_3 {
+    0% {
+        width: 100%;
+    }
+
+    2% {
+        width: 100%;
+    }
+
+    50% {
+        width: 8%;
+    }
+}
+
+.block4_4 {
+    width: 38vw;
+    height: 24vw;
+    background: rgba(188, 188, 188, 1);
+    background-image: url(../img/d9nJS-ezgif.com-effects\ \(2\).gif);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.block4_5 {
+    width: 24vw;
+    height: 24vw;
+    background: url(../img/SVOD_compas.png);
+    background-size: contain;
+}
+
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+    .scr4_block_1 {
+        display: none;
+    }
+
+    .scr4_blocks_2-5 {
+        width: 100vw;
+    }
+
+    .block4_2 {
+        width: 38vw;
+        height: 38vw;
+    }
+
+    .block4_3 {
+        width: 62vw;
+        height: 38vw;
+    }
+
+    .text_block4_3 {
+        font-size: 4.6vw;
+        line-height: 4.6vw;
+    }
+
+    .block4_4 {
+        width: 62vw;
+        height: 38vw;
+    }
+
+    .block4_5 {
+        width: 38vw;
+        height: 38vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    .forth_screen {
+        flex-direction: column;
+    }
+
+    .scr4_blocks_2-3,
+    .scr4_blocks_4-5 {
+        flex-direction: column;
+    }
+
+    .scr4_block_1 {
+        width: 100vw;
+        height: 126.5vw;
+    }
+
+    .block4_2 {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .block4_3 {
+        width: 100vw;
+        height: 68vw;
+    }
+
+    .text_block4_3 {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+        transform: translate(-50%, -50%);
+    }
+
+    .block4_4 {
+        width: 100vw;
+        height: 68vw;
+    }
+
+    .block4_4 {
+        background-size: cover;
+        background-position: -6vw;
+    }
+
+    .block4_5 {
+        width: 100vw;
+        height: 100vw;
+    }
+}

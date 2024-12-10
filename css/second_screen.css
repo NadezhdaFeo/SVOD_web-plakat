@@ -1,0 +1,281 @@
+.second_screen {
+    display: flex;
+}
+
+.vinyl_player {
+    width: 62vw;
+    height: 48vw;
+    background: url(../img/vinyl_player_background.svg);
+    background-size: contain;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.vinyl_record {
+    width: 42.5vw;
+    height: 42.5vw;
+    background: url(../img/vinyl_record_first_layer.png) no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vinyl_record_second_layer {
+    width: 42.1vw;
+    height: 42.1vw;
+    background: url(../img/vinyl_record_second_layer.png) no-repeat;
+    background-size: contain;
+    animation: vinyl_tortion 2s linear infinite;
+}
+
+.tone_arm {
+    width: 28vw;
+    height: 48vw;
+    background: url(../img/tone_arm.svg) no-repeat;
+    background-size: contain;
+    margin-left: -15vw;
+    animation: tone_arm 1s ease-in-out infinite;
+}
+
+@keyframes vinyl_tortion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    12% {
+        transform: rotate(1deg);
+    }
+
+    25% {
+        transform: rotate(0.5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    75% {
+        transform: rotate(-3deg);
+    }
+
+    92% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tone_arm {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(0.4deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.vinyl_records {
+    width: 38vw;
+    height: 48vw;
+    background-color: black;
+    border-left: white solid 0.28vw;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    overflow-x: hidden;
+}
+
+.vinyl_case {
+    width: 9.3vw;
+    background: url(../img/vinil_record_case.svg);
+    background-size: contain;
+
+    margin-left: -2vw;
+    position: relative;
+    padding-top: 4vw;
+    padding-left: 3.5vw;
+}
+
+.vinil_records_text {
+    font-family: "EucidCircularB-Light";
+    font-size: 4.5vw;
+    text-transform: uppercase;
+
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: baseline;
+}
+
+.vinyl_case:hover {
+    background: url(../img/vinil_record_case_hover.svg);
+    background-size: contain;
+    margin-left: -0.75vw;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+    .second_screen {
+        height: 134vw;
+        flex-direction: column-reverse;
+    }
+
+    .vinyl_records {
+        width: 100vw;
+        height: 64vw;
+        border-bottom: white solid 0.45vw;
+        border-top: white solid 0.45vw;
+
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.5vw;
+        overflow-y: hidden;
+    }
+
+    .vinyl_case {
+        width: 100vw;
+        height: 14vw;
+        background: url(../img/vinil_record_case_for_tablet.svg);
+        background-size: cover;
+
+        margin-left: 0vw;
+        margin-bottom: -2vw;
+        position: relative;
+        padding-top: 0.5vw;
+        padding-left: 7vw;
+    }
+
+    .vinyl_case:hover {
+        background: url(../img/vinil_record_case_for_tablet_hover.svg);
+        background-size: cover;
+        margin-bottom: 0vw;
+
+    }
+
+    .vinil_records_text {
+        font-size: 8vw;
+
+        transform: rotate(0deg);
+        display: flex;
+        justify-content: baseline;
+    }
+
+    .vinyl_player {
+        width: 100vw;
+        height: 70vw;
+
+        background: url(../img/vinyl_player_background_tablet.svg);
+        background-size: contain;
+    }
+
+    .vinyl_record {
+        width: 62vw;
+        height: 62vw;
+    }
+
+    .vinyl_record_second_layer {
+        width: 61.4vw;
+        height: 61.4vw;
+        background: url(../img/vinyl_record_second_layer.png) no-repeat;
+        background-size: contain;
+    }
+
+    .tone_arm {
+        width: 40.8vw;
+        height: 70vw;
+        background: url(../img/tone_arm.svg) no-repeat;
+        background-size: contain;
+        margin-left: -20vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    .second_screen {
+        height: 134vw;
+        flex-direction: column-reverse;
+    }
+
+    .vinyl_records {
+        width: 100vw;
+        height: 64vw;
+        border-bottom: white solid 0.45vw;
+        border-top: white solid 0.45vw;
+
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.5vw;
+        overflow-y: hidden;
+    }
+
+    .vinyl_case {
+        width: 100vw;
+        height: 14vw;
+        background: url(../img/vinil_record_case_for_tablet.svg);
+        background-size: cover;
+
+        margin-left: 0vw;
+        margin-bottom: -2vw;
+        position: relative;
+        padding-top: 0.5vw;
+        padding-left: 7vw;
+    }
+
+    .vinyl_case:hover {
+        background: url(../img/vinil_record_case_for_tablet_hover.svg);
+        background-size: cover;
+        margin-bottom: 0vw;
+
+    }
+
+    .vinil_records_text {
+        font-size: 8vw;
+
+        transform: rotate(0deg);
+        display: flex;
+        justify-content: baseline;
+    }
+
+    .vinyl_player {
+        width: 100vw;
+        height: 70vw;
+
+        background: url(../img/vinyl_player_background_tablet.svg);
+        background-size: contain;
+    }
+
+    .vinyl_record {
+        width: 62vw;
+        height: 62vw;
+    }
+
+    .vinyl_record_second_layer {
+        width: 61.4vw;
+        height: 61.4vw;
+        background: url(../img/vinyl_record_second_layer.png) no-repeat;
+        background-size: contain;
+    }
+
+    .tone_arm {
+        width: 40.8vw;
+        height: 70vw;
+        background: url(../img/tone_arm.svg) no-repeat;
+        background-size: contain;
+        margin-left: -15vw;
+    }
+
+}

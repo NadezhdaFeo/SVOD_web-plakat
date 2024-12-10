@@ -1,0 +1,135 @@
+.third_screen {
+    width: 100vw;
+    height: 24vw;
+    display: flex;
+}
+
+.scr3_block1 {
+    width: 38vw;
+    height: 24vw;
+    background-color: white;
+}
+
+.scr3_block2 {
+    width: 62vw;
+    height: 24vw;
+    background-color: rgba(188, 188, 188, 1);
+}
+
+.round {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: white;
+    border: black solid 0.25vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "EucidCircularB-Regular";
+    font-size: 2.8vw;
+    word-spacing: -0.85vw;
+}
+
+.text_rounds {
+    height: 24vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: -24vw;
+    padding-left: 3.7vw;
+    padding-right: 3.6vw;
+}
+
+.vector_rounds {
+    width: 62vw;
+    height: 24vw;
+    background: url(../img/scr3_round_of_rounds.svg) -2vw 0 / 24vw no-repeat,
+        url(../img/scr3_round_of_rounds.svg) 12.1vw 0 / 24vw no-repeat,
+        url(../img/scr3_round_of_rounds.svg) 25.8vw 0 / 24vw no-repeat,
+        url(../img/scr3_round_of_rounds.svg) 40vw 0 / 24vw no-repeat;
+    animation: vector_rounds 8s linear infinite;
+}
+
+@keyframes vector_rounds {
+    0% {
+        background-position: url(../img/scr3_round_of_rounds.svg);
+    }
+
+    50%,
+    51.5% {
+        background-position: 18vw 0;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+    .third_screen {
+        height: 38vw;
+    }
+
+    .scr3_block1 {
+        display: none;
+    }
+
+    .scr3_block2 {
+        width: 100vw;
+        height: 38vw;
+        background-color: rgba(188, 188, 188, 1);
+    }
+
+    .round {
+        width: 6.5vw;
+        height: 6.5vw;
+        font-size: 4.6vw;
+        border-width: 0.4vw;
+        word-spacing: -1.4vw;
+    }
+
+    .text_rounds {
+        height: 38vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        margin-top: -38vw;
+        padding-left: 3.7vw;
+        padding-right: 3.6vw;
+    }
+
+    .vector_rounds {
+        width: 100vw;
+        height: 38vw;
+        background: url(../img/scr3_round_of_rounds.svg) -4vw 0 / 38vw no-repeat,
+            url(../img/scr3_round_of_rounds.svg) 19.2vw 0 / 38vw no-repeat,
+            url(../img/scr3_round_of_rounds.svg) 42.4vw 0 / 38vw no-repeat,
+            url(../img/scr3_round_of_rounds.svg) 65.6vw 0 / 38vw no-repeat;
+    }
+
+    @keyframes vector_rounds {
+        0% {
+            background-position: url(../img/scr3_round_of_rounds.svg);
+        }
+
+        50%,
+        51.5% {
+            background-position: 30vw 0;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 414px) {
+    .third_screen {
+        height: 60vw;
+    }
+
+    .scr3_block1 {
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .scr3_block2 {
+        display: none;
+    }
+}

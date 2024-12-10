@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "EucidCircularB-Regular";
+    src: url(../fonts/EuclidCircularB-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "EucidCircularB-Light";
+    src: url(../fonts/EuclidCircularB-Light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    max-width: 100%;
+    background-color: white;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
