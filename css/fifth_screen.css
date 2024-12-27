@@ -74,6 +74,7 @@
     background: url(../img/block5_3.png) no-repeat;
     background-size: cover;
     animation: block5_3_tortion 3s linear infinite;
+    overflow: hidden;
 }
 
 .img_block5_3:hover {

@@ -7,6 +7,7 @@
     height: 48vw;
     background: url(../img/vinyl_player_background.svg);
     background-size: contain;
+    overflow: hidden;
 
     display: flex;
     justify-content: flex-end;
