@@ -21,31 +21,8 @@
 .block1_1 {
     width: 24vw;
     height: 24vw;
-    background: url(../img/logo_background.svg);
+    background: url(../img/logo.png);
     background-size: contain;
-    position: relative;
-    font-size: 5vw;
-    /* animation: logo_animation 2s ease-in-out infinite; */
-}
-
-/* @keyframes logo_animation {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    40% {
-        transform: translateX(0);
-    }
-} */
-
-.block1_1 h1 {
-    font-family: "EucidCircularB-Light";
-    text-transform: uppercase;
-    color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-61%, -50%);
 }
 
 .block1_2 {
@@ -64,7 +41,10 @@
 
 .block1_2 span {
     font-family: "EucidCircularB-Regular";
-    /* color: black; */
+}
+
+.block1_2 span:hover {
+    text-decoration: line-through;
 }
 
 .text_4 {
@@ -201,16 +181,22 @@
 
     font-size: 2.8vw;
     line-height: 3.6vw;
+    color: black;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.block1_3:hover {
+    background: url(../img/background_block1_3.svg);
+    background-size: contain;
+    font-size: 0vw;
+}
+
 .block1_3 p {
     font-family: "EucidCircularB-Regular";
     text-transform: uppercase;
-    color: black;
 }
 
 .block1_4 {
@@ -226,7 +212,7 @@
     height: 4vw;
     border-radius: 50%;
     background-color: white;
-    border: black solid 0.25vw;
+    border: black solid 0.3vw;
 
     position: absolute;
     top: 50%;
@@ -242,12 +228,21 @@
     word-spacing: -0.85vw;
 }
 
+.round_scr1:hover {
+    width: 6vw;
+    height: 6vw;
+    background-color: black;
+    color: white;
+    font-size: 4.5vw;
+    word-spacing: -1.5vw;
+}
+
 .pulse {
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
     background-color: white;
-    border: black solid 0.25vw;
+    border: black solid 0.3vw;
 
     position: relative;
     top: 50%;
@@ -260,7 +255,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: black solid 0.25vw;
+    border: inherit;
     border-radius: 50%;
 
     animation: pulse 3s linear infinite;
@@ -289,23 +284,33 @@
 .block2_2 {
     width: 38vw;
     height: 24vw;
-    background: url(../img/arrow_scr1_1.svg) 0vw 0;
-    background-size: contain;
-    animation: smooth_arrow 2s ease-in-out infinite;
+    background-color: black;
 }
 
-@keyframes smooth_arrow {
-    0% {
-        background-position: 0vw 0;
-    }
+.block2_2:hover {
+    background-color: rgba(188, 188, 188, 1);
+}
 
-    50% {
-        background-position: 38vw 0;
+.arrows {
+    width: 38vw;
+    height: 24vw;
+    background: url(../img/arrows_1_scr1.svg) -20vw 1.3vw / 65vw no-repeat,
+        url(../img/arrows_2_scr1.svg) 0vw 8.5vw / 65vw no-repeat,
+        url(../img/arrows_1_scr1.svg) -20vw 15.8vw / 65vw no-repeat;
+    animation: arrows 1.8s ease-in-out infinite;
+}
+
+@keyframes arrows {
+    0% {
+        background: url(../img/arrows_1_scr1.svg) -20vw 1.3vw / 65vw no-repeat,
+            url(../img/arrows_2_scr1.svg) 0vw 8.5vw / 65vw no-repeat,
+            url(../img/arrows_1_scr1.svg) -20vw 15.8vw / 65vw no-repeat;
     }
 
     100% {
-        background-position: 38vw 0;
-
+        background: url(../img/arrows_1_scr1.svg) -3.5vw 1.3vw / 65vw no-repeat,
+            url(../img/arrows_2_scr1.svg) -16.5vw 8.5vw / 65vw no-repeat,
+            url(../img/arrows_1_scr1.svg) -3.5vw 15.8vw / 65vw no-repeat;
     }
 }
 
@@ -393,23 +398,26 @@
         height: 38vw;
     }
 
-    .block2_2 {
-        background-size: cover;
-        animation: smooth_arrow 2s ease-in-out infinite;
+    .arrows {
+        width: 62vw;
+        height: 38vw;
+        background: url(../img/arrows_1_scr1.svg) -26.8vw 1.6vw / 92vw no-repeat,
+            url(../img/arrows_2_scr1.svg) 0vw 14vw / 92vw no-repeat,
+            url(../img/arrows_1_scr1.svg) -26.8vw 26vw / 92vw no-repeat;
+        animation: arrows 1.8s ease-in-out infinite;
     }
 
-    @keyframes smooth_arrow {
+    @keyframes arrows {
         0% {
-            background-position: 0vw 0;
-        }
-
-        50% {
-            background-position: 62vw 0;
+            background: url(../img/arrows_1_scr1.svg) -26.8vw 1.6vw / 92vw no-repeat,
+                url(../img/arrows_2_scr1.svg) 0vw 14vw / 92vw no-repeat,
+                url(../img/arrows_1_scr1.svg) -26.8vw 26vw / 92vw no-repeat;
         }
 
         100% {
-            background-position: 62vw 0;
-
+            background: url(../img/arrows_1_scr1.svg) -3.5vw 1.6vw /92vw no-repeat,
+                url(../img/arrows_2_scr1.svg) -23.4vw 14vw / 92vw no-repeat,
+                url(../img/arrows_1_scr1.svg) -3.5vw 26vw / 92vw no-repeat;
         }
     }
 }
@@ -506,23 +514,26 @@
         height: 60vw;
     }
 
-    .block2_2 {
-        background-size: cover;
-        animation: smooth_arrow 2s ease-in-out infinite;
+    .arrows {
+        width: 100vw;
+        height: 60vw;
+        background: url(../img/arrows_1_scr1.svg) -40vw 2.5vw / 149vw no-repeat,
+            url(../img/arrows_2_scr1.svg) 0vw 21vw / 149vw no-repeat,
+            url(../img/arrows_1_scr1.svg) -40vw 40vw / 149vw no-repeat;
+        animation: arrows 1.8s ease-in-out infinite;
     }
 
-    @keyframes smooth_arrow {
+    @keyframes arrows {
         0% {
-            background-position: 0vw 0;
-        }
-
-        50% {
-            background-position: 100vw 0;
+            background: url(../img/arrows_1_scr1.svg) -40vw 2.5vw / 149vw no-repeat,
+                url(../img/arrows_2_scr1.svg) 0vw 21vw / 149vw no-repeat,
+                url(../img/arrows_1_scr1.svg) -40vw 40vw / 149vw no-repeat;
         }
 
         100% {
-            background-position: 100vw 0;
-
+            background: url(../img/arrows_1_scr1.svg) -2.4vw 2.5vw /149vw no-repeat,
+                url(../img/arrows_2_scr1.svg) -37.8vw 21vw / 149vw no-repeat,
+                url(../img/arrows_1_scr1.svg) -2.4vw 40vw / 149vw no-repeat;
         }
     }
 

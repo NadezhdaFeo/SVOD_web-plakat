@@ -38,7 +38,7 @@
     background: url(../img/tone_arm.svg) no-repeat;
     background-size: contain;
     margin-left: -15vw;
-    animation: tone_arm 1s ease-in-out infinite;
+    animation: tone_arm 3.5s ease-in-out infinite;
 }
 
 @keyframes vinyl_tortion {
@@ -77,15 +77,18 @@
 
 @keyframes tone_arm {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(-3deg);
+        transform-origin: 21vw 11vw;
     }
 
     50% {
-        transform: rotate(0.4deg);
+        transform: rotate(4.5deg);
+        transform-origin: 21vw 11vw;
     }
 
     100% {
-        transform: rotate(0deg);
+        transform: rotate(-3deg);
+        transform-origin: 21vw 11vw;
     }
 }
 
@@ -103,7 +106,7 @@
 
 .vinyl_case {
     width: 9.3vw;
-    background: url(../img/vinil_record_case.svg);
+    background: url(../img/vinyl_record_case.svg);
     background-size: contain;
 
     margin-left: -2vw;
@@ -112,7 +115,7 @@
     padding-left: 3.5vw;
 }
 
-.vinil_records_text {
+.vinyl_records_text {
     font-family: "EucidCircularB-Light";
     font-size: 4.5vw;
     text-transform: uppercase;
@@ -123,10 +126,108 @@
 }
 
 .vinyl_case:hover {
-    background: url(../img/vinil_record_case_hover.svg);
+    background: url(../img/vinyl_record_case_hover.svg);
     background-size: contain;
     margin-left: -0.75vw;
-    cursor: pointer;
+}
+
+.exhibitions:hover {
+    cursor: url(../img/exhibitions.png), pointer;
+}
+
+.exhibitions:hover~.defolt_v_c {
+    display: none;
+}
+
+.lectures:hover {
+    cursor: url(../img/lectures.png), pointer;
+}
+
+.lectures:hover~.defolt_v_c,
+.lectures:hover~.exhibitions_v_c {
+    display: none;
+}
+
+.workshops:hover {
+    cursor: url(../img/workshops.png), pointer;
+}
+
+.workshops:hover~.defolt_v_c,
+.workshops:hover~.exhibitions_v_c,
+.workshops:hover~.lectures_v_c {
+    display: none;
+}
+
+.seminars:hover {
+    cursor: url(../img/seminars.png), pointer;
+}
+
+.seminars:hover~.defolt_v_c,
+.seminars:hover~.exhibitions_v_c,
+.seminars:hover~.lectures_v_c,
+.seminars:hover~.workshops_v_c {
+    display: none;
+}
+
+.projects:hover {
+    cursor: url(../img/projects.png), pointer;
+}
+
+.projects:hover~.defolt_v_c,
+.projects:hover~.exhibitions_v_c,
+.projects:hover~.lectures_v_c,
+.projects:hover~.workshops_v_c,
+.projects:hover~.seminars_v_c {
+    display: none;
+}
+
+.vinyl_cover {
+    width: 16.8vw;
+    height: 16.8vw;
+    position: absolute;
+    margin-left: -43vw;
+    margin-top: 15.5vw;
+    animation: vinyl_cover_spinning 5s linear infinite;
+}
+
+.defolt_v_c {
+    background: url(../img/vinyl_cover.svg);
+    background-size: contain;
+}
+
+.exhibitions_v_c {
+    background: url(../img/exhibitions_vinyl_cover.svg);
+    background-size: contain;
+}
+
+.lectures_v_c {
+    background: url(../img/lectures_vinyl_cover.svg);
+    background-size: contain;
+}
+
+.workshops_v_c {
+    background: url(../img/workshops_vinyl_cover.svg);
+    background-size: contain;
+}
+
+.seminars_v_c {
+    background: url(../img/seminars_vinyl_cover.svg);
+    background-size: contain;
+}
+
+.projects_v_c {
+    background: url(../img/projects_vinyl_cover.svg);
+    background-size: contain;
+}
+
+@keyframes vinyl_cover_spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (min-width: 415px) and (max-width: 1023px) {
@@ -150,7 +251,7 @@
     .vinyl_case {
         width: 100vw;
         height: 14vw;
-        background: url(../img/vinil_record_case_for_tablet.svg);
+        background: url(../img/vinyl_record_case_for_tablet.svg);
         background-size: cover;
 
         margin-left: 0vw;
@@ -161,13 +262,13 @@
     }
 
     .vinyl_case:hover {
-        background: url(../img/vinil_record_case_for_tablet_hover.svg);
+        background: url(../img/vinyl_record_case_for_tablet_hover.svg);
         background-size: cover;
         margin-bottom: 0vw;
 
     }
 
-    .vinil_records_text {
+    .vinyl_records_text {
         font-size: 8vw;
 
         transform: rotate(0deg);
@@ -202,6 +303,15 @@
         background-size: contain;
         margin-left: -20vw;
     }
+
+    .vinyl_cover {
+        width: 25vw;
+        height: 25vw;
+        position: absolute;
+        margin-left: -4vw;
+        margin-bottom: -48vw;
+        animation: vinyl_cover_spinning 5s linear infinite;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 414px) {
@@ -225,7 +335,7 @@
     .vinyl_case {
         width: 100vw;
         height: 14vw;
-        background: url(../img/vinil_record_case_for_tablet.svg);
+        background: url(../img/vinyl_record_case_for_tablet.svg);
         background-size: cover;
 
         margin-left: 0vw;
@@ -236,13 +346,13 @@
     }
 
     .vinyl_case:hover {
-        background: url(../img/vinil_record_case_for_tablet_hover.svg);
+        background: url(../img/vinyl_record_case_for_tablet_hover.svg);
         background-size: cover;
         margin-bottom: 0vw;
 
     }
 
-    .vinil_records_text {
+    .vinyl_records_text {
         font-size: 8vw;
 
         transform: rotate(0deg);
@@ -275,7 +385,16 @@
         height: 70vw;
         background: url(../img/tone_arm.svg) no-repeat;
         background-size: contain;
-        margin-left: -15vw;
+        margin-left: -21vw;
+    }
+
+    .vinyl_cover {
+        width: 24.5vw;
+        height: 24.5vw;
+        position: absolute;
+        margin-left: -2vw;
+        margin-bottom: -47.5vw;
+        animation: vinyl_cover_spinning 5s linear infinite;
     }
 
 }

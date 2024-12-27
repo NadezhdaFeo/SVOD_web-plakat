@@ -21,6 +21,7 @@ body {
     width: 100vw;
     max-width: 100%;
     background-color: white;
+    cursor: url(../img/cursor.png), default;
 }
 
 body {

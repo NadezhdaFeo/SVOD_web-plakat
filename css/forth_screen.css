@@ -8,7 +8,7 @@
     height: 48vw;
     background: url(../img/scr4_block_1_background.svg);
     background-size: contain;
-    transition: none !important;
+    transition: none;
     background-color: black;
     overflow: hidden;
     animation: scr4_block_1 2.5s linear infinite;
@@ -91,11 +91,53 @@
 .block4_2 {
     width: 24vw;
     height: 24vw;
-    background: url(../img/C.svg) 0.2vw 0.2vw / 5.5vw no-repeat,
-        url(../img/V.svg) 6.6vw 0.2vw / 4.25vw no-repeat,
-        url(../img/O.svg) 11.8vw 0.2vw / 5.95vw no-repeat,
-        url(../img/D.svg) 17.8vw 0.2vw / 5.95vw no-repeat;
+}
 
+.block4_2:hover {
+    background: url(../img/background_block4_2.svg) center / 100% no-repeat;
+    background-size: contain;
+    animation: block4_2 1.5s linear infinite;
+}
+
+@keyframes block4_2 {
+    0% {
+        background: url(../img/background_block4_2.svg) center / 100% no-repeat;
+    }
+
+    50% {
+        background: url(../img/background_block4_2.svg) center / 50% no-repeat;
+    }
+
+    100% {
+        background: url(../img/background_block4_2.svg) center / 100% no-repeat;
+    }
+}
+
+.svod_condenced {
+    width: 24vw;
+    height: 24vw;
+    background: url(../img/C.svg) 0.2vw 0.2vw / 5.5vw no-repeat,
+        url(../img/V.svg) 6.6vw 0.2vw / 4.3vw no-repeat,
+        url(../img/O.svg) 11.7vw 0.2vw / 5.95vw no-repeat,
+        url(../img/D.svg) 17.8vw 0.2vw / 5.95vw no-repeat;
+    animation: svod_condenced 1.5s linear infinite;
+    cursor: url(../img/cursor_scr42.png), pointer;
+}
+
+@keyframes svod_condenced {
+    0% {
+        background: url(../img/C.svg) 0.2vw 0.2vw / 5.5vw no-repeat,
+            url(../img/V.svg) 6.6vw 0.2vw / 4.3vw no-repeat,
+            url(../img/O.svg) 11.7vw 0.2vw / 5.95vw no-repeat,
+            url(../img/D.svg) 17.8vw 0.2vw / 5.95vw no-repeat;
+    }
+
+    50% {
+        background: url(../img/C.svg) 0.2vw 5.3vw / 5.5vw no-repeat,
+            url(../img/V.svg) 6.6vw 3vw / 4.3vw no-repeat,
+            url(../img/O.svg) 11.7vw 1.6vw / 5.95vw no-repeat,
+            url(../img/D.svg) 17.8vw 0.2vw / 5.95vw no-repeat;
+    }
 }
 
 .block4_3 {
@@ -148,6 +190,33 @@
     height: 24vw;
     background: url(../img/SVOD_compas.png);
     background-size: contain;
+    overflow: hidden;
+}
+
+.compas_arrows {
+    width: 24vw;
+    height: 24vw;
+    background: url(../img/compas_arrows.png);
+    background-size: contain;
+}
+
+.compas_arrows:hover {
+    animation: svod_compas 1.5s linear;
+}
+
+@keyframes svod_compas {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-50deg);
+        scale: 2;
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @media screen and (min-width: 415px) and (max-width: 1023px) {
@@ -162,6 +231,31 @@
     .block4_2 {
         width: 38vw;
         height: 38vw;
+    }
+
+    .svod_condenced {
+        width: 38vw;
+        height: 38vw;
+        background: url(../img/C.svg) 1vw 1vw / 8.3vw no-repeat,
+            url(../img/V.svg) 11vw 1vw / 6.4vw no-repeat,
+            url(../img/O.svg) 18.7vw 1vw / 9vw no-repeat,
+            url(../img/D.svg) 27.8vw 1vw / 9vw no-repeat;
+    }
+
+    @keyframes svod_condenced {
+        0% {
+            background: url(../img/C.svg) 1vw 1vw / 8.3vw no-repeat,
+                url(../img/V.svg) 11vw 1vw / 6.4vw no-repeat,
+                url(../img/O.svg) 18.7vw 1vw / 9vw no-repeat,
+                url(../img/D.svg) 27.8vw 1vw / 9vw no-repeat;
+        }
+
+        50% {
+            background: url(../img/C.svg) 1vw 9.5vw / 8.3vw no-repeat,
+                url(../img/V.svg) 11vw 7vw / 6.4vw no-repeat,
+                url(../img/O.svg) 18.7vw 4.7vw / 9vw no-repeat,
+                url(../img/D.svg) 27.8vw 1vw / 9vw no-repeat;
+        }
     }
 
     .block4_3 {
@@ -180,6 +274,11 @@
     }
 
     .block4_5 {
+        width: 38vw;
+        height: 38vw;
+    }
+
+    .compas_arrows {
         width: 38vw;
         height: 38vw;
     }
@@ -205,6 +304,31 @@
         height: 100vw;
     }
 
+    .svod_condenced {
+        width: 100vw;
+        height: 100vw;
+        background: url(../img/C.svg) 3vw 3vw / 22vw no-repeat,
+            url(../img/V.svg) 28.6vw 3vw / 17.2vw no-repeat,
+            url(../img/O.svg) 48.8vw 3vw / 23.8vw no-repeat,
+            url(../img/D.svg) 73.2vw 3vw / 23.8vw no-repeat;
+    }
+
+    @keyframes svod_condenced {
+        0% {
+            background: url(../img/C.svg) 3vw 3vw / 22vw no-repeat,
+                url(../img/V.svg) 28.6vw 3vw / 17.2vw no-repeat,
+                url(../img/O.svg) 48.8vw 3vw / 23.8vw no-repeat,
+                url(../img/D.svg) 73.2vw 3vw / 23.8vw no-repeat;
+        }
+
+        50% {
+            background: url(../img/C.svg) 3vw 24vw / 22vw no-repeat,
+                url(../img/V.svg) 28.6vw 16vw / 17.2vw no-repeat,
+                url(../img/O.svg) 48.8vw 10vw / 23.8vw no-repeat,
+                url(../img/D.svg) 73.2vw 3vw / 23.8vw no-repeat;
+        }
+    }
+
     .block4_3 {
         width: 100vw;
         height: 68vw;
@@ -213,7 +337,6 @@
     .text_block4_3 {
         font-size: 7.5vw;
         line-height: 7.5vw;
-        transform: translate(-50%, -50%);
     }
 
     .block4_4 {
@@ -227,6 +350,11 @@
     }
 
     .block4_5 {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .compas_arrows {
         width: 100vw;
         height: 100vw;
     }
