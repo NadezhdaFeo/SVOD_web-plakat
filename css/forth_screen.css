@@ -121,7 +121,7 @@
         url(../img/O.svg) 11.7vw 0.2vw / 5.95vw no-repeat,
         url(../img/D.svg) 17.8vw 0.2vw / 5.95vw no-repeat;
     animation: svod_condenced 1.5s linear infinite;
-    cursor: url(../img/cursor_scr42.png), pointer;
+    cursor: url(../img/cursor_scr4.png), pointer;
 }
 
 @keyframes svod_condenced {
@@ -180,7 +180,7 @@
     width: 38vw;
     height: 24vw;
     background: rgba(188, 188, 188, 1);
-    background-image: url(../img/d9nJS-ezgif.com-effects\ \(2\).gif);
+    background-image: url(../img/gif_scr4.gif);
     background-size: cover;
     background-blend-mode: multiply;
 }
