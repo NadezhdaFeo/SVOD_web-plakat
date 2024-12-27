@@ -8,10 +8,12 @@
     width: 38vw;
     height: 24vw;
     background: url(../img/torus_1.gif) center / 105%;
+    background-blend-mode: multiply;
 }
 
 .scr3_block1:hover {
     background: url(../img/torus_2.gif) center / 105%;
+    background-blend-mode: multiply;
 }
 
 .scr3_block2 {
